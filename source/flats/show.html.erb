@@ -1,16 +1,70 @@
----
+<!-- ---
 title: Le Wagon - Middleman - <%= data.flats[owner].capitalize %>
 ---
 
 <div class="container">
   <div class="header">
-    <%= image_tag "https://kitt.lewagon.com/placeholder/cities/#{data.flats[owner].city_slug}", :style => "width:80vw; height:40vh; margin: 0 auto" %>
+    <%#= image_tag "https://kitt.lewagon.com/placeholder/cities/#{data.flats[owner].city_slug}", :style => "width:80vw; height:40vh; margin: 0 auto" %>
   </div>
 </div>
   <div class="contents" style="padding: 40px; width: 60vw; height: 150px; margin: 0 auto">
-    <p><%= data.flats[owner].name %></p>
-    <p><%= data.flats[owner].description %></p>
-    <p>Wifi: <%=  data.flats[owner].wifi.to_s %></p>
-    <p>Beer Included: <%= data.flats[owner].beer_included.to_s %></p>
+    <p><%#= data.flats[owner].name %></p>
+    <p><%#= data.flats[owner].description %></p>
+    <p>Wifi: <%#=  data.flats[owner].wifi.to_s %></p>
+    <p>Beer Included: <%#= data.flats[owner].beer_included.to_s %></p>
+  </div> -->
+
+
+
+  <%#= partial "bannersml" %>
+  <% flat = data.flats[owner] %>
+  <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 50%), url('<%= "https://kitt.lewagon.com/placeholder/cities/#{flat.city_slug}" %>'); height: 50vh; background-position: center;">
   </div>
+
+
+  <div class="header-flat">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+          <div class="header-flat-details">
+            <div class="header-flat-owner  text-center">
+              <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "img-circle", width: "80" %>
+              <p><%= owner.capitalize %></p>
+            </div>
+            <div class="header-flat-name">
+              <h1><%= flat.description %></h1>
+              <p><%= flat.city_name %></p>
+              <p class="rating">
+                <% flat.rating.times do  %>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <% end %>
+                <% (5 - flat.rating).times do  %>
+                <i class="fa fa-star" style="color: #cacccd"></i>
+                <% end %>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

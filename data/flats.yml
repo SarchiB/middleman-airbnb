@@ -1,24 +1,46 @@
-sarchib:
-  name: "Sarah's home"
-  gh_username: "sarchib"
-  description: "Charming room in Canggu"
-  city_name: "Canggu, Bali"
-  city_slug: "bali"
+# sarchib:
+#   name: "Sarah's home"
+#   gh_username: "sarchib"
+#   description: "Charming room in Canggu"
+#   city_name: "Canggu, Bali"
+#   city_slug: "bali"
+#   wifi: false
+#   rating: 4
+# rhosyn:
+#   name: "Bridget's home"
+#   gh_username: rhosyn
+#   description: Small flat in Tokyo
+#   city_name: "Tokyo, Japan"
+#   city_slug: "tokyo"
+#   wifi: true
+#   rating: 3
+# bdlb77:
+#   name: "Bryan's home"
+#   gh_username: bdlb77
+#   description: Nice flat in Piccadilly
+#   city_name: "London, UK"
+#   city_slug: "london"
+#   wifi: true
+#   rating: 3
+
+ssaunier:
+  name: "Sebastien's home"
+  description: "Charming room in Montmartre"
+  city_name: "Paris, France"
+  city_slug: "paris"
   wifi: false
   rating: 4
-rhosyn:
-  name: "Bridget's home"
-  gh_username: rhosyn
+papillard:
+  name: "Boris' home"
   description: Small flat in Tokyo
   city_name: "Tokyo, Japan"
   city_slug: "tokyo"
   wifi: true
   rating: 3
-bdlb77:
-  name: "Bryan's home"
-  gh_username: bdlb77
+monsieurpaillard:
+  name: Romain's home
   description: Nice flat in Piccadilly
   city_name: "London, UK"
   city_slug: "london"
   wifi: true
-  rating: 3
+  rating: 5
